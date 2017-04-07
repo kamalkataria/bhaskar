@@ -1,0 +1,29 @@
+{% load bootstrap3 %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+{%load staticfiles%}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fastfood Restourent Jodhpur</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.multiscroll.css'%}" />
+
+        <script src="{%static 'js/jquery.min.js'%}"></script>
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <script src="{%static 'js/jquery.easings.min.js'%}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.multiscroll.js' %}"></script>
+
+        <!--<script src="{%static 'js/jquery.event.move.js'%}"></script>-->
+        <!--<script src="{%static 'js/jquery.twentytwenty.js'%}"></script>-->
+        <!--<link href="{%static 'css/twentytwenty.css'%}" rel="stylesheet"/>-->
+        <link href="{%static 'css/styles.css'%}" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+    </head>
+
+    <body>
+    {% block content %}{% endblock content %}
+    </body>
+</html>

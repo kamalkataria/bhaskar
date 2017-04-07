@@ -1,0 +1,81 @@
+{%extends 'fastfoods/base.html'%}
+{%block content%}
+{%load staticfiles%}
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand twop orangered" href="#">Bhaskar</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active" ><a href="#" class=" two">Home</a></li>
+        <li class="dropdown"><a class=" two dropdown-toogle" data-toggle="dropdown" href="#">Menu<span class="Caret"></span></a>
+        <ul class="dropdown-menu">
+          <li>Indian Foods</li>
+          <li>South Indian Foods</li>
+          <li>Chinese Foods</li>
+          <li>Continental</li>
+          <li>Beverages</li>
+          <li>Ice Creams</li>
+        </ul>
+
+        </li>
+        <li><a class=" two" href="#">Contact Us</a></li>
+        <li><a class=" two"  href="#">About Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<section>
+  <div class="container">
+<div id="multiscroll">
+	<div class="ms-left">
+		<div class="ms-section">
+          <h1>Section1</h1>
+          <h1 class="text-center">South Indian Reciepies</h1>
+
+        </div>
+		<div class="ms-section">
+          <h1>Section3</h1>
+          <h1 class="text-center">Chinese Chow Chow</h1>
+
+        </div>
+		<div class="ms-section">
+          <h1>Section5</h1>
+          <h1 class="text-center">Beverages</h1>
+
+        </div>
+	</div>
+	<div class="ms-right">
+		<div class="ms-section">
+          <h1>Section2</h1>
+          <h1 class="text-center">Indian Tadkas</h1>
+
+        </div>
+		<div class="ms-section">
+          <h1>Section4</h1>
+          <h1 class="text-center">Continentals</h1>
+
+        </div>
+		<div class="ms-section">
+          <h1>Section6</h1>
+          <h1 class="text-center">Icecreams</h1>
+        </div>
+	</div>
+</div>
+    </div>
+<script>
+  $(document).ready(function() {
+	$('#multiscroll').multiscroll();
+});
+
+</script>
+
+</section>
+{%endblock%}
