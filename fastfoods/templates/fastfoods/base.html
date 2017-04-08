@@ -1,29 +1,68 @@
 {% load bootstrap3 %}
-
-{# Display django.contrib.messages as Bootstrap alerts #}
 {% bootstrap_messages %}
 {%load staticfiles%}
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>Fastfood Restourent Jodhpur</title>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.multiscroll.css'%}" />
+        <!--<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.multiscroll.css'%}" />-->
 
         <script src="{%static 'js/jquery.min.js'%}"></script>
         {% bootstrap_css %}
         {% bootstrap_javascript %}
-        <script src="{%static 'js/jquery.easings.min.js'%}"></script>
-        <script type="text/javascript" src="{% static 'js/jquery.multiscroll.js' %}"></script>
+        <!--<script src="{%static 'js/jquery.easings.min.js'%}"></script>-->
+        <!--<script type="text/javascript" src="{% static 'js/jquery.multiscroll.js' %}"></script>-->
 
         <!--<script src="{%static 'js/jquery.event.move.js'%}"></script>-->
         <!--<script src="{%static 'js/jquery.twentytwenty.js'%}"></script>-->
         <!--<link href="{%static 'css/twentytwenty.css'%}" rel="stylesheet"/>-->
         <link href="{%static 'css/styles.css'%}" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     </head>
 
     <body>
-    {% block content %}{% endblock content %}
+    <nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand twop orangered" href="#">Bhaskar</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active" ><a href="#" class=" two">Home</a></li>
+        <li class="dropdown"><a class=" two dropdown-toogle" data-toggle="dropdown" href="#">Menu<span class="Caret"></span></a>
+        <ul class="dropdown-menu">
+          <li>Indian Foods</li>
+          <li>South Indian Foods</li>
+          <li>Chinese Foods</li>
+          <li>Continental</li>
+          <li>Beverages</li>
+          <li>Ice Creams</li>
+        </ul>
+
+        </li>
+        <li><a class=" two" href="#">Contact Us</a></li>
+        <li><a class=" two"  href="#">About Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+    <section>
+    <div class="container-fluid foodsection">
+
+    {% block 'content' %}{% endblock  %}
+        </div>
+    </section>
+<footer>
+    <div class="footerx container-fluid">
+        <h5 class="text-center">Designed By <a href="www.techfly.com">Techfly</a></h5></footer>
+    </div>
     </body>
+
 </html>

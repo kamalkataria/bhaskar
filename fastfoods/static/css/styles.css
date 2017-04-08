@@ -1,14 +1,45 @@
+.oppo{
+margin-top:100px;
+margin-bottom:100px;
+padding-top:100px;
+padding-bottom:100px;
+overflow-y:auto;
 
-.chango{
-font-family: 'Chango', cursive;
 }
-.orangered{
-color:orange!important;
+body{
+overflow-y:auto;
 }
-.white{
-color:white!important;}
-.twop{
-font-size:2em;}
-.two{
-font-size:1.3em;
+.fooditem{
+padding-top:10px;
+padding-bottom:10px;
+}
+.metaphore{
+/*
+background-image:url('../images/14ad4bb3.png');
+background-repeat:repeat;
+*/
+margin-top:5px;
+padding:20px;
+-webkit-box-shadow: 18px 24px 33px -17px rgba(39,114,194,0.71);
+-moz-box-shadow: 18px 24px 33px -17px rgba(39,114,194,0.71);
+box-shadow: 18px 24px 33px -17px rgba(39,114,194,0.71);
+}
+.titlefood{
+font-size:1.8em;
+}
+.grey{
+color:darkslategrey;
+}
+.satisfy{
+font-family: 'Satisfy', cursive;
+}
+.nav-tabs {
+border-bottom-color:darkslategrey!important;
+border-bottom-style:solid!important;
+border-bottom-width:2px!important;
+}
+
+footer{
+margin-top:50px;
+
 }
