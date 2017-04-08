@@ -43,3 +43,16 @@ footer{
 margin-top:50px;
 
 }
+form{
+    padding: 10px!important;
+    -webkit-box-shadow: 18px 24px 33px -17px rgba(39,114,194,0.71);
+-moz-box-shadow: 18px 24px 33px -17px rgba(39,114,194,0.71);
+box-shadow: 18px 24px 33px -17px rgba(39,114,194,0.71);
+}
+form input,textarea{
+    border-color: rgba(39,114,194,0.71)!important;
+    border-width: 1px!important;
+    border-style: solid!important;
+/*    padding:10px!important;*/
+    
+}

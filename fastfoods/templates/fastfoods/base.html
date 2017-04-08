@@ -19,6 +19,7 @@
         <link href="{%static 'css/styles.css'%}" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <script src="{%static 'js/javas.js'%}"></script>
     </head>
 
     <body>
@@ -55,14 +56,20 @@
 </nav>
     <section>
     <div class="container-fluid foodsection">
-
-    {% block 'content' %}{% endblock  %}
+        {% block 'content' %}{% endblock  %}
+    </div>
+    <div class="container-fluid userreviews">
+        <h2 class="text-danger text-center">Say about us</h2>
+        {%block userreviews%}{%endblock%}
         </div>
     </section>
 <footer>
     <div class="footerx container-fluid">
-        <h5 class="text-center">Designed By <a href="www.techfly.com">Techfly</a></h5></footer>
+        <h5 class="text-center">Designed By <a href="www.techfly.com">Techfly</a></h5>
+        
+        
     </div>
+        </footer>
     </body>
 
 </html>

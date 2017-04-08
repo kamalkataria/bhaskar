@@ -12,3 +12,7 @@ def index(request):
             products[cats[i].category_name]=proj
     # print(products)
     return render(request, 'fastfoods/index.html', {'productx':products})
+
+def usercomments(request):
+    print('Inside ucmts')
+    return HttpResponse('Inside User COmments section')
