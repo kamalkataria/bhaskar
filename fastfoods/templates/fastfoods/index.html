@@ -48,8 +48,8 @@
 
 {% endblock %}
 {%block userreviews%}
-<div class="well col-sm-6">
-<h3 class="text-center text-info">Please share your ideas</h3>
+<div class="col-sm-6 formx">
+
 
     <div class="form-group">
      <input class="form-control" id="email" placeholder="Your Email Address" required/>
@@ -61,13 +61,27 @@
      <textarea class="form-control" id="message" rows="5"></textarea>
      
      </div>
-     <button class="btn btn-success btn-md" id="commentbtn">Submit</button>
-    
-    
-    
+     <button class="btn btn-info btn-md" id="commentbtn">Submit</button>
+
+
 
 </div>
-<div class="well col-sm-6"></div>
+<div class="col-sm-6 comments_section" id="comments_section">
+    {%if comments%}
+    {%for comment in comments%}
+    <div class=" usermsg">
+        <h4 class="page-heading grey text-center">{{comment.user_name}}</h4>
+        <p class="grey text-center">{{comment.user_email}}</p>
+        <p class="grey text-center">{{comment.user_message}}</p>
+
+
+
+    </div>
+    {%endfor%}
+    {%endif%}
+
+
+</div>
 
 
 

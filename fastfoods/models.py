@@ -27,11 +27,11 @@ class Product(models.Model):
     def __str__(self):
         return self.product_name
 class UserComments(models.Model):
-    Choices=[('ACTIVE','active'),('DISABLED','disabled')]
-    user_email=models.EmailField()
-    user_name=models.CharField(max_length=100)
-    user_message=models.TextField()
-    active_or_disable=models.CharField(max_length=15,choices=Choices,default='DISABLED',blank=True,null=True)
+    Choices = [('ACTIVE','active'),('DISABLED','disabled')]
+    user_email = models.EmailField()
+    user_name = models.CharField(max_length=100)
+    user_message = models.TextField()
+    active_or_disable = models.CharField(max_length=15,choices=Choices,default='DISABLED',blank=True,null=True)
 
     
 

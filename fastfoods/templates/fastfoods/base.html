@@ -1,12 +1,15 @@
 {% load bootstrap3 %}
-{% bootstrap_messages %}
+<!--{% bootstrap_messages %}-->
 {%load staticfiles%}
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Fastfood Restourent Jodhpur</title>
         <!--<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.multiscroll.css'%}" />-->
-
+        <link href="{%static 'css/fm.scrollator.jquery.css'%}" rel="stylesheet"/>
+        <link href="{%static 'css/iao-alert.css'%}" rel="stylesheet"/>
         <script src="{%static 'js/jquery.min.js'%}"></script>
         {% bootstrap_css %}
         {% bootstrap_javascript %}
@@ -16,10 +19,21 @@
         <!--<script src="{%static 'js/jquery.event.move.js'%}"></script>-->
         <!--<script src="{%static 'js/jquery.twentytwenty.js'%}"></script>-->
         <!--<link href="{%static 'css/twentytwenty.css'%}" rel="stylesheet"/>-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <link href="{%static 'css/styles.css'%}" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <script src="{%static 'js/javas.js'%}"></script>
+        <script src="{%static 'js/iao-alert.jquery.js'%}"></script>
+        <!--<script src="{%static 'js/fm.scrollator.jquery.js'%}"></script>-->
+      <!--<script src="{%static 'js/gmaps.js'%}"></script>-->
+ <script src="{%static 'js/jssor.slider-23.1.0.mini.js'%}"></script>
+        <script>
+    jssor_slider1_init = function (containerId) {
+        var options = { AutoPlay: 1 };
+        var jssor_slider1 = new JssorSlider(containerId, options);
+    };
+</script>
     </head>
 
     <body>
@@ -55,17 +69,58 @@
   </div>
 </nav>
     <section>
+        {%block imgs%}
+       <div class="image">
+
+      <img src="{%static 'images/after.jpg'%}" class="img-responsive" alt="" />
+
+      <h2 class="text-center">Bhaskar</h2>
+
+</div>
+
+        {%endblock%}
     <div class="container-fluid foodsection">
+        <h2 class="grey text-center">Menu</h2>
         {% block 'content' %}{% endblock  %}
     </div>
     <div class="container-fluid userreviews">
-        <h2 class="text-danger text-center">Say about us</h2>
+        <h2 class="grey text-center page-header">Share Your Experiences</h2>
         {%block userreviews%}{%endblock%}
         </div>
     </section>
 <footer>
-    <div class="footerx container-fluid">
-        <h5 class="text-center">Designed By <a href="www.techfly.com">Techfly</a></h5>
+    <div class="footerx ">
+
+        <div class="container-fluid">
+        <div class="col-sm-4">
+            <h4 class="page-header grey">Contact us</h4>
+            <p class="grey"><strong>Address:</strong> 123 Downtown Avenue, Manhattan, New York, United States of America</p>
+            <p class="grey"><strong>Phone:</strong>+917792037378</p>
+            <p class="grey"><strong>Email:</strong>info@bhaskarrestro.com</p>
+        </div>
+        <div class="col-sm-4">
+            <h4 class="grey page-header">Social Networks</h4>
+            <p class="grey">We are on Facebook,Twitter,Instagram.<br>Follow us to know more.</p>
+            <ul class="list-inline">
+                <li class="text-center"><i class="fa fa-twitter grey"></i> </li>
+                <li><i class="fa fa-facebook grey"></i> </li>
+                <li><i class="fa fa-google-plus grey"></i> </li>
+
+
+            </ul>
+
+        </div>
+        <div class="col-sm-4">
+            <h4 class="page-header grey">About Us</h4>
+            <p class="grey">Established in 2004,We are a small enthusiastic team of memberss.
+            Our services are open 24x7x365.Feel Free to come and give us the
+                opportunity to serve.
+            </p>
+
+        </div>
+        </div>
+
+        <h5 class="panel-heading text-center white">2017 Designed By &copy; <a href="www.techfly.com" class="white"><u>Techfly</u></a></h5>
         
         
     </div>

@@ -9,6 +9,10 @@ overflow-y:auto;
 body{
 overflow-y:auto;
 }
+.foodsection{
+padding-top:50px;
+}
+
 .fooditem{
 padding-top:10px;
 padding-bottom:10px;
@@ -43,16 +47,115 @@ footer{
 margin-top:50px;
 
 }
-form{
+/*.formx{
     padding: 10px!important;
     -webkit-box-shadow: 18px 24px 33px -17px rgba(39,114,194,0.71);
 -moz-box-shadow: 18px 24px 33px -17px rgba(39,114,194,0.71);
 box-shadow: 18px 24px 33px -17px rgba(39,114,194,0.71);
-}
-form input,textarea{
+}*/
+.formx input,textarea{
     border-color: rgba(39,114,194,0.71)!important;
     border-width: 1px!important;
     border-style: solid!important;
 /*    padding:10px!important;*/
     
+}
+
+.userreviews{
+padding-top:100px;
+padding-bottom:150px;
+
+}
+
+.userreviews .formx{
+padding-top:30px;
+}
+.comments_section{
+padding-top:30px;
+max-height: 300px;
+/*height:300px;*/
+overflow-y:scroll;
+}
+.usermsg{
+  padding: 10px!important;
+ -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.07);
+-moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.07);
+box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.07);
+}
+.social a{color: #fff;margin: 0 0.5em;}
+.list-inline{margin-left:auto;margin-right:auto;text-align:center;}
+.panel-heading{
+background-color:darkslategrey!important;
+}
+.white{
+color:white;
+}
+.navbar{
+background-color:darkslategrey;
+padding-top:10px;
+padding-bottom:10px;
+margin-left:0px!important;
+margin-right:0px!important;
+border-radius:0!important;
+
+ -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.07)!important;
+-moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.07)!important;
+box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.07)!important;
+
+
+}
+.navbar a{
+color:white;
+
+}
+.navbar-right a:hover{
+background-color:orangered!important;
+}
+.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+
+}
+.image img{
+/*
+ height:600px;
+*/
+ width:100%;
+}
+
+.image h2 {
+   position: absolute;
+   top: 200px;
+   font-weight:900;
+   width: 100%;
+   font-size:15em;
+   color:white;
+   font-family: 'Satisfy', cursive;
+
+}
+@media (max-width: 1200px) {
+   .image h2{
+   position: absolute;
+
+   top: 200px;
+   font-weight:900;
+   width: 100%;
+   font-size:12em;
+   color:white;
+   font-family: 'Satisfy', cursive;
+
+   }
+}
+@media (max-width: 681px) {
+   .image h2{
+   position: absolute;
+
+   top: 100px;
+   font-weight:500;
+   width: 100%;
+   font-size:8em;
+   color:white;
+   font-family: 'Satisfy', cursive;
+
+   }
 }
